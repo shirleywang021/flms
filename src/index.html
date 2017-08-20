@@ -1,0 +1,542 @@
+<!doctype html>
+<html>
+<body>
+<br />
+<br />
+<br />
+<br />
+<h1 style="text-align:center">add add oil,day day up!</h1>
+<hr />
+<!--<body background="http://www.w3school.com.cn/i/tulip_ballade.jpg">--  >
+<!-- 本段为注释 --> 
+
+ <body>
+ <link rel="stylesheet" href="https://www.baidu.com/">
+</body>
+<h2>frame的应用</h2>
+<h4>基本框架</h4>
+<frameset cols="28%,50%,22%">
+
+  <frame src="D:\projects\my-flms-sys\src\assets\img\Chrysanthemum.jpg">
+  <frame src="http://www.w3school.com.cn/i/tulip_ballade.jpg">
+  <frame src="http://www.w3school.com.cn/i/tulip_ballade.jpg">
+
+</frameset>
+<h4>导航框架</h4>
+<frameset cols="120,*">
+
+  <frame src="/example/html/html_contents.html">
+  <frame src="file:///C:/Users/wangcx/Desktop/w3school.html#tangshi" name="showframe">
+
+</frameset>
+
+
+
+<h2>div&span的应用</h2>
+<h4>类的定义与应用</h4>
+<head>
+<style>
+.cities {
+    background-color:purple;
+    color:green;
+    margin:10px;
+    padding:10px;
+}	
+.fruits {
+    background-color:yellow;
+    color:grey;
+    margin:10px;
+    padding:10px;
+}
+span.definition {
+    background-color:blue;
+    color:black;
+    margin:10px;
+    padding:10px;
+    }
+</style>
+</head>
+
+<body>
+<div class="cities">
+<h3>London</h3>
+</div>
+<div class="fruits">
+<p>London is <span class="definition">the capital city of England</span>. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+
+<p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+ </div>
+</body>
+<h4>报纸排版的应用场景</h4>
+<head>
+<style>
+.header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+.nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:200px;
+    width:100px;
+    float:left;
+    text-align: center;
+    padding:5px; 
+}
+.section {
+    width:950px;
+    float:left;
+    padding:10px; 
+}
+.footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px; 
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+<h1>City Gallery</h1>
+</div>
+
+<div class="nav">
+London<br>
+Paris<br>
+Tokyo<br>
+</div>
+
+<div class="section">
+<h1>London</h1>
+<p>
+London is the capital city of England. It is the most populous city in the United Kingdom,
+with a metropolitan area of over 13 million inhabitants.
+</p>
+<p>
+Standing on the River Thames, London has been a major settlement for two millennia,
+its history going back to its founding by the Romans, who named it Londinium.
+</p>
+</div>
+
+<div class="footer">
+Copyright W3School.com.cn
+</div>
+
+</body>
+
+<h2>列表练习</h2>
+<h4>无序列表</h4>
+<ul type="A">
+<li >banana</li>
+<li>apple</li>
+<li>pear</li>
+<li>grape</li>
+</ul>
+<h4>有序列表</h4>
+<ol start="50" type="I" >
+<li >banana</li>
+<li>apple</li>
+<li>pear</li>
+<li>grape</li>
+</ol>
+<h4>嵌套列表</h4>
+<ul type="circle"“">
+  <li>咖啡</li>
+  <li>茶
+    <ol start="50">
+    <li>红茶</li>
+    <li>绿茶
+    <ol type="A">
+    <li> 江苏产</li>
+    <li> 安徽产</li>
+    </ol>
+    </ol>
+  </li>
+  <li>牛奶</li>
+</ul>
+
+<h4>自定义列表</h4>
+<dl>
+<dt>wangcx:</dt>
+<dd>wangchunxue</dd>
+<dt>ss:</dt>
+<dd>sissi  <img src ="assets/img/Chrysanthemum.jpg" align="top" width="50" height="50"> </dd>
+</dl>
+
+
+
+<h4>有序列表</h4>
+
+<h2>表格练习</h2>
+<h4>特殊定义表格的样式，利用style</h4>
+<style>
+table.lamp {
+    width:100%;
+    border:4px solid blue;
+}
+table.lamp th, td {
+    padding:40px;
+}
+table.lamp td {
+    width:200px;
+}
+</style>
+</br>
+<table class="lamp">
+<tr>
+  <th>
+    <img src="/images/lamp.jpg" alt="Note" style="height:82px;width:82px">
+  </th>
+  <td bgcolor="pink">
+    The table element was not designed to be a layout tool.
+  </td>
+</tr>
+</table>
+
+<h4>表格页眉页脚</h4>
+<table border="1" cellpadding="20">
+<head>
+<style type="text/css">
+thead {color:green}
+tbody {color:blue;height:50px}
+tfoot {color:red}
+</style>
+</head>
+<body>
+ <thead>
+  <thead>
+    <tr>
+      <th>Month</th>
+      <th>Savings</th>
+    </tr>
+  </thead>
+
+  <tfoot>
+    <tr>
+      <td>Sum</td>
+      <td>$180</td>
+    </tr>
+  </tfoot>
+
+  <tbody>
+    <tr>
+      <td>January</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>$80</td>
+    </tr>
+  </tbody>
+  </body>
+</table>
+<h4>带格式的表格</h4>
+<table width="400" border="1" cellpadding="20">
+<caption><b>我的家庭账本</b></caption>
+
+ <tr>
+  <th align="left">消费项目....</th>
+  <th align="right">一月</th>
+  <th align="right">二月</th>
+ </tr>
+ <tr>
+  <td align="left">
+  <ul>
+  <li>水果</li>
+  <li>零食</li>
+  </td>
+  <td align="right">$241.10</td>
+  <td align="right">$50.20</td>
+ </tr>
+ <tr>
+  <td align="left" bgcolor="pink">
+  <p>这个月比较节省</p>
+  <p>这个月比较节省?</p>
+  </td>
+  <td align="right">$30.00</td>
+  <td align="right">$44.45</td>
+ </tr>
+ <tr>
+  <td align="left" bgcolor="green">明细表
+  <table  frame="above">
+  <caption>the specifications</caption>
+  <tr>
+  <th  bgcolor="blue">类别</th>
+  <td>日用品</td>
+  <td>大件</td>
+  </tr>
+  <tr>
+  <th >费用</th>
+  <td>200</td>
+  <td>20000</td>
+  </tr>
+  </table>
+  </td>
+  <td align="right">$730.40</td>
+  <td align="right">$650.00</td>
+ </tr>
+ <tr>
+  <th align="left">总计</th>
+  <th align="right">$1001.50</th>
+  <th align="right">$744.65</th>
+ </tr>
+</table>
+<h4>垂直的表头：</h4>
+<table border="1">
+<caption>世界上最厉害的人</caption>
+<tr>
+  <th>姓名</th>
+  <td>Bill Gates</td>
+  <td>wangcx</td>
+</tr>
+<tr>
+  <th rowspan="2">电话</th>
+  <td>555 77 854</td>
+</tr>
+<tr>
+  <td>555 77 855</td>
+</tr>
+</table>
+
+<h4>没有边界的多行多列表格</h4>
+<table >
+<th >第一列</th>
+<th>第二列</th>
+<th>第三列</th>
+<th>第四列</th>
+<tr>
+  <td>100</td>
+  <td>100</td>
+  <td>100</td>
+  <td>100</td>
+
+</tr>
+<tr>
+  <td>200</td>
+  <td>200</td>
+  <td>  </td>
+  <td>200</td>
+
+</tr>
+</table>
+<h4>多行多列表格</h4>
+<table border="3">
+<th colspan="3">第一列</th>
+
+<th>第四列</th>
+<tr>
+  <td>100</td>
+  <td>100</td>
+  <td>100</td>
+  <td>100</td>
+
+</tr>
+<tr>
+  <td>200</td>
+  <td>200</td>
+  <td>  </td>
+  <td>200</td>
+
+</tr>
+</table>
+
+<h2>超链接练习</h2>
+<h3>图片引用练习</h3>
+<h4>可供点击区域的图像地图</h4>
+<img
+src="http://www.w3school.com.cn/i/tulip_ballade.jpg"
+border="0" usemap="#starmap"
+alt="Planets" />
+
+<map name="starmap" id="planetmap">
+
+<area
+shape="circle"
+coords="180,139,14"
+href ="/example/html/venus.html"
+target ="_blank"
+alt="Venus" />
+
+<area
+shape="circle"
+coords="129,161,10"
+href ="/example/html/mercur.html"
+target ="_blank"
+alt="Mercury" />
+
+<area
+shape="rect"
+coords="0,0,110,260"
+href ="/example/html/sun.html"
+target ="_blank"
+alt="Sun" />
+
+</map>
+
+</br>
+<h4>把图像作为链接来使用</h4>
+<a href="http://www.w3school.com.cn/i/tulip_ballade.jpg">  <img border="0" src="/i/eg_buttonnext.gif" />
+<p> <img src="http://www.w3school.com.cn/i/tulip_ballade.jpg" align="left"  width="50" height="50"> 图像的 align 属性设置为 "left"。图像将浮动到文本的左侧</p>
+
+<p>图像 <img src ="http://www.w3school.com.cn/i/tulip_ballade.jpg" align="top" width="50" height="50"> 在文本中</p>
+<p>图像 <img src="http://www.w3school.com.cn/i/tulip_ballade.jpg" align="bottom" width="50" height="50"> 在文本中</p>
+
+<p>图像 <img src ="http://www.w3school.com.cn/i/tulip_ballade.jpg" align="middle" width="50" height="50"> 在文本中</p>
+
+
+<p>请注意，bottom 对齐方式是默认的对齐方式。</p>
+</br>
+</br>
+<img src="http://www.w3school.com.cn/i/w3school_logo_white.gif" />
+</br>
+<img src="http://www.easyicon.net/1197071-credit_card_icon.html" alt="credit card" />
+</br>
+<a href="mailto:wangcx@ect888.com?subject=go on,fighting!">点我发送邮件</a>
+</br>
+<a href="mailto:someone@microsoft.com&cc=someoneelse@microsoft.com&bcc=andsomeoneelse2@microsoft.com&subject=Summer%20Party&body=You%20are%20invited%20to%20a%20big%20summer%20party!">带主送、抄送、标题和正文的邮件发送</a>
+</br></br></br>
+<a name="tips">开头</a>
+<a href="#tangshi">我爱唐诗</a>
+<!--[if IE 8]>
+    .... some HTML here ....
+<![endif]-->
+
+
+<!--div后续研究--  >
+<div class="container">
+  <template-interpolation></template-interpolation>
+  <template-ref-var></template-ref-var>
+  <test-value-binding></test-value-binding>
+  <test-event-binding></test-event-binding>
+  <test-twoway-binding></test-twoway-binding>
+  <test-ng-if></test-ng-if>
+  <test-ng-for></test-ng-for>
+  <test-ng-switch></test-ng-switch>
+  <test-ng-class></test-ng-class>
+  <test-ng-style></test-ng-style>
+  <test-ng-model></test-ng-model>
+  <test-pipe></test-pipe>
+  <test-saft-nav></test-saft-nav>
+</div>
+<!-- 本段为注释 --> 
+<head>
+<style type="text/css">
+h1 {color: red}
+p {color: green}
+</style>
+</head>
+
+<body>
+<h1>header 1</h1>
+<p>A paragraph.</p>
+</body>
+
+<body>
+<h1>header 2</h1>
+<p>B paragraph.< ></p>
+</body>
+
+
+<p>这是注释</p>
+<p style="text-align:left">2017.8.5开始前端学习,add oil!new start,yeah!</p>
+
+
+<h2>样式定义的练习</h2>
+<head>
+<style type="text/css">
+span {
+background-color: yellow;
+color: purple
+}
+</style>
+</head>
+
+<style type="text/css">
+body {background-color: gray}
+p {color:green;margin-left: 20px}
+</style>
+
+<body>
+<h3>我通过<span>外部</span>样式表进行格式化。</h3>
+<p>我也一样！</p>
+</body>
+
+
+
+<p class="tip"><span>提示：</span>... ... ...</p>
+p.tip span {
+	font-weight:bold;
+	color:purple;
+	}
+
+
+<p><span style="background-color:green;color:blue">some text.</span>some other text.</p>
+
+<br />
+<br />
+
+<h2>段落字体的练习</h2>
+也可以使用图像来作链接：
+<a href="/tiy/t.asp?f=html_links">
+<img border="0" src="/i/eg_buttonnext.gif" />
+
+<p><a href="/tiy/t.asp?f=html_links">本文本</a> 是一个指向本网站中的一个页面的链接。</p>
+
+<p><a href="http://www.baidu.com/">本文本</a> 是一个指向万维网上的页面的链接。</p>
+
+<a name="tangshi">唐诗《春眠》</a>
+<p>This is<br />a para<br />graph with line breaks</p>
+<body style="background-color:darkgray">
+<p style="text-align:center;font-size:30px;font-family:verdana;color:purple">春眠<br />不觉晓</p>
+<p style="font-size:30px;font-family:Times;color:green">处处<br />闻啼鸟</p>
+
+  粒粒&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;皆辛苦
+
+<p><var>E</var> = <var>m</var> <var>c</var><sup>2</sup></p>
+<br/>
+<br/>
+<p>一打有 <del>二十</del> <ins>十二</ins> 件。</p>
+<p>一打有 <del>二十</del> <big>十二</big>件。</p>
+
+<img border="10" src="http://www.w3school.com.cn/i/tulip_fringed_family.jpg" alt="Tulip" width="200" height="200">
+<br/>
+<address>
+	written by <a href="www.baidu.com">wangcx</a><br/>
+	our address is：<br/>
+	pudong new district<br/>
+	27,building1<br/>
+	shanghai
+</address>
+
+<bdo dir="rtl">
+hello world
+</bdo>
+<br/>
+<bdo dir="utd">
+Here is some Hebrew text
+</bdo>
+<blockquote>
+	小燕子穿花衣<br/>年年春天来这里
+</blockquote>
+<q>
+	小燕子穿花衣<br/>年年春天来这里
+</q>
+
+<p><del>小燕子穿红衣</del>,<ins>小燕子穿花衣</ins></p>>
+
+<p>一打有 <e>二十</e> <ins>十二</ins> 件。</p>
+
+<e>二十</e>
+
+
+
+<a href="#tips">回到开头</a>
+
+</html>
+</body>
